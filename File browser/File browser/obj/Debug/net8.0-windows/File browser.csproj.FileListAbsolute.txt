@@ -1,0 +1,21 @@
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\File browser.exe
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\File browser.deps.json
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\File browser.runtimeconfig.json
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\File browser.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\File browser.pdb
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\net8.0-windows\File browser_MarkupCompile.cache
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\net8.0-windows\File browser_MarkupCompile.lref
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\net8.0-windows\File browser.g.resources
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\net8.0-windows\File browser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\net8.0-windows\File browser.AssemblyInfoInputs.cache
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\net8.0-windows\File browser.AssemblyInfo.cs
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\net8.0-windows\File browser.csproj.CoreCompileInputs.cache
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\net8.0-windows\File browser.sourcelink.json
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\net8.0-windows\File browser.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\net8.0-windows\refint\File browser.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\net8.0-windows\File browser.pdb
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\net8.0-windows\File browser.genruntimeconfig.cache
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\net8.0-windows\ref\File browser.dll
