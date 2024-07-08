@@ -3,7 +3,11 @@ using File_browser.Model.Reader;
 using File_browser.Model.Utils;
 using Microsoft.Win32;
 using System.Collections.ObjectModel;
-using System.Windows.Forms;
+using System.DirectoryServices;
+using System.Linq;
+using System.Reflection.Metadata.Ecma335;
+using System.Text.RegularExpressions;
+using System.Windows;
 
 namespace File_browser.ViewModel
 {
@@ -12,6 +16,7 @@ namespace File_browser.ViewModel
         public MainWindowViewModel()
         {
             ChoosenFiles = new ObservableCollection<FileReader>();
+            FinalFiles = new ObservableCollection<FileReader>();
         }
 
         private ObservableCollection<FileReader> choosenFiles;
@@ -34,6 +39,17 @@ namespace File_browser.ViewModel
             set { textToSearch = value; }
         }
 
+        private ObservableCollection<FileReader> finalFiles;
+
+        public ObservableCollection<FileReader> FinalFiles
+        {
+            get { return finalFiles; }
+            set 
+            { 
+                finalFiles = value;
+                OnPropertyChanged();
+            }
+        }
 
 
         public RelayCommand FileChooserCommand => new RelayCommand(execute => FileChooser());
@@ -44,17 +60,57 @@ namespace File_browser.ViewModel
 
         private void SearchWords()
         {
+            FinalFiles.Clear();
+            Thread.Sleep(500);
             KeyWordsValidation keyWordsTextvalidation = new KeyWordsValidation();
-            string text;
+            string validText;
+            List<string> text = new List<string>();
 
             try
             {
-                text = keyWordsTextvalidation.Validate(TextToSearch);
+                validText = keyWordsTextvalidation.Validate(TextToSearch);
+
+                foreach (var file in ChoosenFiles)
+                {
+                    text.Add(file.ReadData());
+                }
             }
-            catch (Exception ex) 
+            catch (FormatException ex)
             {
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
             }
+            catch (NotImplementedException ex)
+            {
+                var i = MessageBox.Show($"{ex.Message}\nDo you want to omit this file and continue?", "ERROR", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                //TODO omit the files
+                return;
+            }
+
+            List<string> keyWordsList = TextParser.ParseTextToWords(validText);
+            List<List<string>> textFromFileAsWords = new List<List<string>>();
+            foreach (var t in text)
+            {
+                textFromFileAsWords.Add(TextParser.ParseTextToWords(t));
+            }
+
+            for (int i = 0; i < textFromFileAsWords.Count; i++)
+            {
+                for (int j = 0; j < keyWordsList.Count; j++) 
+                {
+                    bool hasKeyWord = textFromFileAsWords[i].Any(t => t.Contains(keyWordsList[j]));
+                    if (hasKeyWord)
+                    {
+                        ++ChoosenFiles[i].MatchingWords;
+                        hasKeyWord = false;
+                        break;
+                    }
+                }
+            }
+
+            ObservableCollectionExtensions.ExtendCollection(FinalFiles, ChoosenFiles.Where(t => t.MatchingWords > 0));
+            
+
         }
 
         private void FileChooser()
@@ -69,15 +125,19 @@ namespace File_browser.ViewModel
 
             if (success == true)
             {
-                string path = fileDialog.FolderName;
+                string[] path = fileDialog.FolderNames;
                 try
                 {
-                    var pickedFiles = FileHelper.GetAllFiles(path);
-                    ObservableCollectionExtensions.ExtendCollection<FileReader>(ChoosenFiles, pickedFiles);
+                    foreach (var item in path)
+                    {
+                        var pickedFiles = FileHelper.GetAllFiles(item);
+                        ObservableCollectionExtensions.ExtendCollection<FileReader>(ChoosenFiles, pickedFiles);
+                    }
+
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
         }
@@ -86,5 +146,7 @@ namespace File_browser.ViewModel
         {
             ChoosenFiles.Clear();
         }
+
+
     }
 }

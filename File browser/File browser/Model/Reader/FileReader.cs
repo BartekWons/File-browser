@@ -1,13 +1,12 @@
-﻿using System.IO;
-
-namespace File_browser.Model.Reader
+﻿namespace File_browser.Model.Reader
 {
-    public class FileReader
+    public abstract class FileReader
     {
         public string FileName { get; set; }
         public string Path { get; set; }
+        public int MatchingWords { get; set; }
 
-        public virtual void ReadData() { }
+        public abstract string ReadData();
 
         public override string ToString()
         {

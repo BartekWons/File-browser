@@ -20,5 +20,27 @@ C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\ne
 C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\net8.0-windows\File browser.genruntimeconfig.cache
 C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\net8.0-windows\ref\File browser.dll
 C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\net8.0-windows\File browser.csproj.AssemblyReference.cache
-C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\Ookii.Dialogs.Wpf.dll
 C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\net8.0-windows\File bro.6FC11A61.Up2Date
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\itext.barcodes.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\itext.bouncy-castle-connector.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\itext.forms.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\itext.io.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\itext.kernel.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\itext.layout.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\itext.pdfa.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\itext.pdfua.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\itext.sign.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\itext.styledxmlparser.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\itext.svg.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\itext.commons.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\DocumentFormat.OpenXml.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\DocumentFormat.OpenXml.Framework.dll

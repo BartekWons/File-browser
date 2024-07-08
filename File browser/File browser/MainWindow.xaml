@@ -51,7 +51,7 @@
                 <RowDefinition Height="80"/>
             </Grid.RowDefinitions>
 
-            <ListView Grid.Row="0" ItemsSource="{Binding OutputFiles}" Margin="10"/>
+            <ListView Grid.Row="0" ItemsSource="{Binding FinalFiles, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="10"/>
         </Grid>
     </Grid>
 </Window>

@@ -22,13 +22,15 @@ namespace File_browser.Model.Reader
 
             var filteredFiles = filesArr.Where(file => allowedExtensions.Contains(System.IO.Path.GetExtension(file)));
 
-            var files = new List<FileReader>();
+            var finalFiles = new List<FileReader>();
 
             foreach (var file in filteredFiles)
             {
-                files.Add(FileReaderFactory.CreateFileReader(file));
+                var tmp = FileReaderFactory.CreateFileReader(file);
+                if (tmp != null)
+                    finalFiles.Add(tmp);
             }
-            return files;
+            return finalFiles;
         }
     }
 }

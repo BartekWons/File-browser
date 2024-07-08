@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("File browserTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+893a210887c9970c7a32bdfc401d3e0f6e18556a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88d239630a1a61731b2fb7c33ab3a5f33ff653f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("File browserTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("File browserTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

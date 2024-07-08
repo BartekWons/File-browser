@@ -1,6 +1,4 @@
-﻿using File_browser.Model.Reader;
-using System.IO;
-using TextReader = File_browser.Model.Reader.TextReader;
+﻿using System.IO;
 
 namespace File_browser.Model.Reader
 {
@@ -9,7 +7,8 @@ namespace File_browser.Model.Reader
         private static readonly Dictionary<string, Func<FileReader>> _readerFactories = new Dictionary<string, Func<FileReader>>(StringComparer.OrdinalIgnoreCase)
         {
             {".pdf", () => new PdfReader() },
-            {".txt", () => new TextReader() }
+            {".txt", () => new TextReader() },
+            {".docx", () => new DocxReader() }
         };
 
         public static FileReader CreateFileReader(string filePath)
@@ -22,7 +21,7 @@ namespace File_browser.Model.Reader
                 reader.FileName = Path.GetFileName(filePath);
                 return reader;
             }
-            throw new NotSupportedException($"File type {extension} is not supported.");
+            return null;
         }
     }
 }
