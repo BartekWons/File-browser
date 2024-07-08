@@ -19,3 +19,6 @@ C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\ne
 C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\net8.0-windows\File browser.pdb
 C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\net8.0-windows\File browser.genruntimeconfig.cache
 C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\net8.0-windows\ref\File browser.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\net8.0-windows\File browser.csproj.AssemblyReference.cache
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\bin\Debug\net8.0-windows\Ookii.Dialogs.Wpf.dll
+C:\Users\Bartek\Desktop\repo\File-browser\File browser\File browser\obj\Debug\net8.0-windows\File bro.6FC11A61.Up2Date

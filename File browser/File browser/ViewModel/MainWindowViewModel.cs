@@ -1,9 +1,9 @@
 ﻿using File_browser.Model;
+using File_browser.Model.Reader;
+using File_browser.Model.Utils;
 using Microsoft.Win32;
 using System.Collections.ObjectModel;
-using System.Diagnostics;
-using System.Windows.Data;
-using System.Xml.Serialization;
+using System.Windows.Forms;
 
 namespace File_browser.ViewModel
 {
@@ -11,12 +11,12 @@ namespace File_browser.ViewModel
     {
         public MainWindowViewModel()
         {
-            ChoosenFiles = new ObservableCollection<File>();
+            ChoosenFiles = new ObservableCollection<FileReader>();
         }
 
-        private ObservableCollection<File> choosenFiles;
+        private ObservableCollection<FileReader> choosenFiles;
 
-        public ObservableCollection<File> ChoosenFiles
+        public ObservableCollection<FileReader> ChoosenFiles
         {
             get { return choosenFiles; }
             set 
@@ -26,17 +26,14 @@ namespace File_browser.ViewModel
             }
         }
 
-        private int[] selectedItem;
+        private string textToSearch;
 
-        public int[] SelectedItem
+        public string TextToSearch
         {
-            get { return selectedItem; }
-            set 
-            { 
-                selectedItem = value; 
-                OnPropertyChanged();
-            }
+            get { return textToSearch; }
+            set { textToSearch = value; }
         }
+
 
 
         public RelayCommand FileChooserCommand => new RelayCommand(execute => FileChooser());
@@ -47,43 +44,47 @@ namespace File_browser.ViewModel
 
         private void SearchWords()
         {
-            foreach (var file in ChoosenFiles)
+            KeyWordsValidation keyWordsTextvalidation = new KeyWordsValidation();
+            string text;
+
+            try
             {
-                Debug.WriteLine(file);
+                text = keyWordsTextvalidation.Validate(TextToSearch);
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void FileChooser()
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Multiselect = true;
-            openFileDialog.Title = "Please pick a file...";
-            openFileDialog.Filter = "All Files|*.*|Text Files|*.txt|Word File|*.docx|PDF file|*.pdf|Document|*.doc";
+            OpenFolderDialog fileDialog = new OpenFolderDialog()
+            {
+                Multiselect = true,
+                Title = "Please pick a directory...",
+            };
 
-            bool? success = openFileDialog.ShowDialog();
+            bool? success = fileDialog.ShowDialog();
 
             if (success == true)
             {
-                string[] fileNames = openFileDialog.SafeFileNames;
-                string[] paths = openFileDialog.FileNames;
-
-                for (int i = 0; i < paths.Length; i++)
+                string path = fileDialog.FolderName;
+                try
                 {
-                    File file = new File{
-                        Path = paths[i],
-                        FileName = fileNames[i]
-                    };
-                    ChoosenFiles.Add(file);
-                }   
+                    var pickedFiles = FileHelper.GetAllFiles(path);
+                    ObservableCollectionExtensions.ExtendCollection<FileReader>(ChoosenFiles, pickedFiles);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
         private void Delete()
         {
-            foreach(var i in SelectedItem)
-            {
-                Debug.WriteLine(i);
-            }
+            ChoosenFiles.Clear();
         }
     }
 }

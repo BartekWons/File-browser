@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "lJI0/bWrj7Q=",
+  "dgSpecHash": "DVmg5BH8bm0=",
   "success": true,
   "projectFilePath": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browser\\File browser.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Bartek\\.nuget\\packages\\ookii.dialogs.wpf\\5.0.1\\ookii.dialogs.wpf.5.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
