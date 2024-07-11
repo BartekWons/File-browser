@@ -3,6 +3,7 @@ using File_browser.Model.Reader;
 using File_browser.Model.Utils;
 using Microsoft.Win32;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.DirectoryServices;
 using System.Linq;
 using System.Reflection.Metadata.Ecma335;
@@ -17,6 +18,7 @@ namespace File_browser.ViewModel
         {
             ChoosenFiles = new ObservableCollection<FileReader>();
             FinalFiles = new ObservableCollection<FileReader>();
+            OrSearchMode = true;
         }
 
         private ObservableCollection<FileReader> choosenFiles;
@@ -51,6 +53,8 @@ namespace File_browser.ViewModel
             }
         }
 
+        public bool OrSearchMode { get; set; }
+        public bool AndSearchMode { get; set; }
 
         public RelayCommand FileChooserCommand => new RelayCommand(execute => FileChooser());
 
@@ -61,7 +65,6 @@ namespace File_browser.ViewModel
         private void SearchWords()
         {
             FinalFiles.Clear();
-            Thread.Sleep(500);
             KeyWordsValidation keyWordsTextvalidation = new KeyWordsValidation();
             string validText;
             List<string> text = new List<string>();
@@ -88,29 +91,19 @@ namespace File_browser.ViewModel
             }
 
             List<string> keyWordsList = TextParser.ParseTextToWords(validText);
-            List<List<string>> textFromFileAsWords = new List<List<string>>();
-            foreach (var t in text)
+            List<List<string>> textFromFileAsWords = ParseTextToWords(text);
+
+            if (OrSearchMode)
+                CheckOrSearchMode(textFromFileAsWords, keyWordsList);
+            else
+                CheckAndSearchMode(textFromFileAsWords, keyWordsList);
+
+            //Check if found a key in files. If not returns the function
+            if (!ChoosenFiles.Any(t => t.MatchingWords > 0))
             {
-                textFromFileAsWords.Add(TextParser.ParseTextToWords(t));
+                MessageBox.Show("None of your key words were found in the specified files. ", "NOT FOUND", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
             }
-
-            for (int i = 0; i < textFromFileAsWords.Count; i++)
-            {
-                for (int j = 0; j < keyWordsList.Count; j++) 
-                {
-                    bool hasKeyWord = textFromFileAsWords[i].Any(t => t.Contains(keyWordsList[j]));
-                    if (hasKeyWord)
-                    {
-                        ++ChoosenFiles[i].MatchingWords;
-                        hasKeyWord = false;
-                        break;
-                    }
-                }
-            }
-
-            ObservableCollectionExtensions.ExtendCollection(FinalFiles, ChoosenFiles.Where(t => t.MatchingWords > 0));
-            
-
         }
 
         private void FileChooser()
@@ -147,6 +140,57 @@ namespace File_browser.ViewModel
             ChoosenFiles.Clear();
         }
 
+        private List<List<string>> ParseTextToWords(List<string> text)
+        {
+            List<List<string>> textFromFileAsWords = new List<List<string>>();
+            foreach (var t in text)
+            {
+                textFromFileAsWords.Add(TextParser.ParseTextToWords(t));
+            }
+            return textFromFileAsWords;
+        }
 
+        private void CheckOrSearchMode(List<List<string>> textFromFileAsWords, List<string> keyWordsList)
+        {
+            bool hasKeyWord;
+            for (int i = 0; i < textFromFileAsWords.Count; i++)
+            {
+                for (int j = 0; j < keyWordsList.Count; j++)
+                {
+                    hasKeyWord = textFromFileAsWords[i].Any(t => t.Contains(keyWordsList[j]));
+                    if (hasKeyWord)
+                    {
+                        ++ChoosenFiles[i].MatchingWords;
+                        hasKeyWord = false;
+                        break;
+                    }
+                }
+            }
+
+            ObservableCollectionExtensions.ExtendCollection(FinalFiles, ChoosenFiles.Where(t => t.MatchingWords > 0));
+        }
+
+        private void CheckAndSearchMode(List<List<string>> textFromFileAsWords, List<string> keyWordsList)
+        {
+            bool[] hasKeyWord = new bool[keyWordsList.Count];
+            List<FileReader> filesContainingKeyWords = new List<FileReader>();
+
+            for (int i = 0; i < textFromFileAsWords.Count; i++)
+            {
+                for (int j = 0; j < keyWordsList.Count; j++)
+                {
+                    hasKeyWord[j] = textFromFileAsWords[i].Any(t => t.Contains(keyWordsList[j]));
+                    if (hasKeyWord[j])
+                    {
+                        ++ChoosenFiles[i].MatchingWords;
+                    }
+                }
+                if (hasKeyWord.All(t => t == true))
+                    filesContainingKeyWords.Add(ChoosenFiles[i]);
+                Array.Fill(hasKeyWord, false);
+            }
+
+            ObservableCollectionExtensions.ExtendCollection(FinalFiles, filesContainingKeyWords);
+        }
     }
 }

@@ -3,32 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7AEA96E-5A94-405A-A6E2-D5825DE8A16E}|File browser\\File browser.csproj|c:\\users\\bartek\\desktop\\repo\\file-browser\\file browser\\file browser\\model\\reader\\filereaderfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7AEA96E-5A94-405A-A6E2-D5825DE8A16E}|File browser\\File browser.csproj|solutionrelative:file browser\\model\\reader\\filereaderfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7AEA96E-5A94-405A-A6E2-D5825DE8A16E}|File browser\\File browser.csproj|c:\\users\\bartek\\desktop\\repo\\file-browser\\file browser\\file browser\\model\\reader\\extensions\\textreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7AEA96E-5A94-405A-A6E2-D5825DE8A16E}|File browser\\File browser.csproj|solutionrelative:file browser\\model\\reader\\extensions\\textreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7AEA96E-5A94-405A-A6E2-D5825DE8A16E}|File browser\\File browser.csproj|c:\\users\\bartek\\desktop\\repo\\file-browser\\file browser\\file browser\\model\\reader\\filehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7AEA96E-5A94-405A-A6E2-D5825DE8A16E}|File browser\\File browser.csproj|solutionrelative:file browser\\model\\reader\\filehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7AEA96E-5A94-405A-A6E2-D5825DE8A16E}|File browser\\File browser.csproj|c:\\users\\bartek\\desktop\\repo\\file-browser\\file browser\\file browser\\model\\reader\\extensions\\pdfreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7AEA96E-5A94-405A-A6E2-D5825DE8A16E}|File browser\\File browser.csproj|solutionrelative:file browser\\model\\reader\\extensions\\pdfreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4864B83-5DF8-4A92-8E03-DF271AA4AA91}|File browserTests\\File browserTests.csproj|c:\\users\\bartek\\desktop\\repo\\file-browser\\file browser\\file browsertests\\model\\keywordsvalidationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4864B83-5DF8-4A92-8E03-DF271AA4AA91}|File browserTests\\File browserTests.csproj|solutionrelative:file browsertests\\model\\keywordsvalidationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7AEA96E-5A94-405A-A6E2-D5825DE8A16E}|File browser\\File browser.csproj|c:\\users\\bartek\\desktop\\repo\\file-browser\\file browser\\file browser\\model\\reader\\extensions\\docxreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7AEA96E-5A94-405A-A6E2-D5825DE8A16E}|File browser\\File browser.csproj|solutionrelative:file browser\\model\\reader\\extensions\\docxreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7AEA96E-5A94-405A-A6E2-D5825DE8A16E}|File browser\\File browser.csproj|c:\\users\\bartek\\desktop\\repo\\file-browser\\file browser\\file browser\\model\\reader\\pdfreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7AEA96E-5A94-405A-A6E2-D5825DE8A16E}|File browser\\File browser.csproj|solutionrelative:file browser\\model\\reader\\pdfreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7AEA96E-5A94-405A-A6E2-D5825DE8A16E}|File browser\\File browser.csproj|c:\\users\\bartek\\desktop\\repo\\file-browser\\file browser\\file browser\\model\\reader\\extensions\\csvreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7AEA96E-5A94-405A-A6E2-D5825DE8A16E}|File browser\\File browser.csproj|solutionrelative:file browser\\model\\reader\\extensions\\csvreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7AEA96E-5A94-405A-A6E2-D5825DE8A16E}|File browser\\File browser.csproj|c:\\users\\bartek\\desktop\\repo\\file-browser\\file browser\\file browser\\model\\reader\\docxreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7AEA96E-5A94-405A-A6E2-D5825DE8A16E}|File browser\\File browser.csproj|solutionrelative:file browser\\model\\reader\\docxreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7AEA96E-5A94-405A-A6E2-D5825DE8A16E}|File browser\\File browser.csproj|c:\\users\\bartek\\desktop\\repo\\file-browser\\file browser\\file browser\\viewmodel\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7AEA96E-5A94-405A-A6E2-D5825DE8A16E}|File browser\\File browser.csproj|solutionrelative:file browser\\viewmodel\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7AEA96E-5A94-405A-A6E2-D5825DE8A16E}|File browser\\File browser.csproj|c:\\users\\bartek\\desktop\\repo\\file-browser\\file browser\\file browser\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E7AEA96E-5A94-405A-A6E2-D5825DE8A16E}|File browser\\File browser.csproj|solutionrelative:file browser\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7AEA96E-5A94-405A-A6E2-D5825DE8A16E}|File browser\\File browser.csproj|c:\\users\\bartek\\desktop\\repo\\file-browser\\file browser\\file browser\\model\\utils\\textparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7AEA96E-5A94-405A-A6E2-D5825DE8A16E}|File browser\\File browser.csproj|solutionrelative:file browser\\model\\utils\\textparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7AEA96E-5A94-405A-A6E2-D5825DE8A16E}|File browser\\File browser.csproj|c:\\users\\bartek\\desktop\\repo\\file-browser\\file browser\\file browser\\model\\reader\\filereader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7AEA96E-5A94-405A-A6E2-D5825DE8A16E}|File browser\\File browser.csproj|solutionrelative:file browser\\model\\reader\\filereader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,117 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FileHelper.cs",
-              "DocumentMoniker": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browser\\Model\\Reader\\FileHelper.cs",
-              "RelativeDocumentMoniker": "File browser\\Model\\Reader\\FileHelper.cs",
-              "ToolTip": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browser\\Model\\Reader\\FileHelper.cs",
-              "RelativeToolTip": "File browser\\Model\\Reader\\FileHelper.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "CSVReader.cs",
+              "DocumentMoniker": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browser\\Model\\Reader\\Extensions\\CSVReader.cs",
+              "RelativeDocumentMoniker": "File browser\\Model\\Reader\\Extensions\\CSVReader.cs",
+              "ToolTip": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browser\\Model\\Reader\\Extensions\\CSVReader.cs",
+              "RelativeToolTip": "File browser\\Model\\Reader\\Extensions\\CSVReader.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T20:33:38.325Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FileReaderFactory.cs",
-              "DocumentMoniker": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browser\\Model\\Reader\\FileReaderFactory.cs",
-              "RelativeDocumentMoniker": "File browser\\Model\\Reader\\FileReaderFactory.cs",
-              "ToolTip": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browser\\Model\\Reader\\FileReaderFactory.cs",
-              "RelativeToolTip": "File browser\\Model\\Reader\\FileReaderFactory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T20:33:36.002Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DocxReader.cs",
-              "DocumentMoniker": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browser\\Model\\Reader\\DocxReader.cs",
-              "RelativeDocumentMoniker": "File browser\\Model\\Reader\\DocxReader.cs",
-              "ToolTip": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browser\\Model\\Reader\\DocxReader.cs",
-              "RelativeToolTip": "File browser\\Model\\Reader\\DocxReader.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T20:23:51.646Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browser\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "File browser\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browser\\MainWindow.xaml",
-              "RelativeToolTip": "File browser\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-08T19:52:55.648Z",
+              "WhenOpened": "2024-07-11T09:41:11.913Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "KeyWordsValidationTests.cs",
-              "DocumentMoniker": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browserTests\\Model\\KeyWordsValidationTests.cs",
-              "RelativeDocumentMoniker": "File browserTests\\Model\\KeyWordsValidationTests.cs",
-              "ToolTip": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browserTests\\Model\\KeyWordsValidationTests.cs",
-              "RelativeToolTip": "File browserTests\\Model\\KeyWordsValidationTests.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "DocxReader.cs",
+              "DocumentMoniker": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browser\\Model\\Reader\\Extensions\\DocxReader.cs",
+              "RelativeDocumentMoniker": "File browser\\Model\\Reader\\Extensions\\DocxReader.cs",
+              "ToolTip": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browser\\Model\\Reader\\Extensions\\DocxReader.cs",
+              "RelativeToolTip": "File browser\\Model\\Reader\\Extensions\\DocxReader.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T19:30:18.514Z",
+              "WhenOpened": "2024-07-11T09:40:15.373Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "PdfReader.cs",
-              "DocumentMoniker": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browser\\Model\\Reader\\PdfReader.cs",
-              "RelativeDocumentMoniker": "File browser\\Model\\Reader\\PdfReader.cs",
-              "ToolTip": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browser\\Model\\Reader\\PdfReader.cs",
-              "RelativeToolTip": "File browser\\Model\\Reader\\PdfReader.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAA1wCUAAAAaAAAA",
+              "DocumentMoniker": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browser\\Model\\Reader\\Extensions\\PdfReader.cs",
+              "RelativeDocumentMoniker": "File browser\\Model\\Reader\\Extensions\\PdfReader.cs",
+              "ToolTip": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browser\\Model\\Reader\\Extensions\\PdfReader.cs",
+              "RelativeToolTip": "File browser\\Model\\Reader\\Extensions\\PdfReader.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wBEAAABRAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T17:25:35.607Z",
+              "WhenOpened": "2024-07-11T09:41:03.504Z",
               "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "dd3ebd27-4d3b-4159-855f-0231ae4a6798",
-        "Display": 1,
-        "X": 915,
-        "Y": 569,
-        "Width": 1654,
-        "Height": 752,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
+            },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TextParser.cs",
-              "DocumentMoniker": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browser\\Model\\Utils\\TextParser.cs",
-              "RelativeDocumentMoniker": "File browser\\Model\\Utils\\TextParser.cs",
-              "ToolTip": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browser\\Model\\Utils\\TextParser.cs",
-              "RelativeToolTip": "File browser\\Model\\Utils\\TextParser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAtAAAA",
+              "DocumentIndex": 0,
+              "Title": "TextReader.cs",
+              "DocumentMoniker": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browser\\Model\\Reader\\Extensions\\TextReader.cs",
+              "RelativeDocumentMoniker": "File browser\\Model\\Reader\\Extensions\\TextReader.cs",
+              "ToolTip": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browser\\Model\\Reader\\Extensions\\TextReader.cs",
+              "RelativeToolTip": "File browser\\Model\\Reader\\Extensions\\TextReader.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T18:59:23.635Z",
+              "WhenOpened": "2024-07-11T09:40:51.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FileReader.cs",
+              "DocumentMoniker": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browser\\Model\\Reader\\FileReader.cs",
+              "RelativeDocumentMoniker": "File browser\\Model\\Reader\\FileReader.cs",
+              "ToolTip": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browser\\Model\\Reader\\FileReader.cs",
+              "RelativeToolTip": "File browser\\Model\\Reader\\FileReader.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T09:40:21.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browser\\ViewModel\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "File browser\\ViewModel\\MainWindowViewModel.cs",
+              "ToolTip": "C:\\Users\\Bartek\\Desktop\\repo\\File-browser\\File browser\\File browser\\ViewModel\\MainWindowViewModel.cs",
+              "RelativeToolTip": "File browser\\ViewModel\\MainWindowViewModel.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAswLEAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T19:13:18.356Z",
               "EditorCaption": ""
             }
           ]

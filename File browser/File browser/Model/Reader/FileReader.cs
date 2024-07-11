@@ -8,6 +8,8 @@
 
         public abstract string ReadData();
 
+        public abstract void Open();
+
         public override string ToString()
         {
             return FileName;

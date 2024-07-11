@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using File_browser.Model.Reader.Extensions;
+using System.IO;
 
 namespace File_browser.Model.Reader
 {
@@ -7,8 +8,8 @@ namespace File_browser.Model.Reader
         private static readonly Dictionary<string, Func<FileReader>> _readerFactories = new Dictionary<string, Func<FileReader>>(StringComparer.OrdinalIgnoreCase)
         {
             {".pdf", () => new PdfReader() },
-            {".txt", () => new TextReader() },
-            {".docx", () => new DocxReader() }
+            {".txt", () => new Extensions.TextReader() },
+            {".docx", () => new DocxReader() },
         };
 
         public static FileReader CreateFileReader(string filePath)
