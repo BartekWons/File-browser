@@ -80,13 +80,16 @@ namespace File_browser.ViewModel
             }
             catch (FormatException ex)
             {
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                
                 return;
             }
             catch (NotImplementedException ex)
             {
-                var i = MessageBox.Show($"{ex.Message}\nDo you want to omit this file and continue?", "ERROR", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                //var i = MessageBox.Show($"{ex.Message}\nDo you want to omit this file and continue?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Question);
                 //TODO omit the files
+                MessageBox.Show("This file type is not supported yet and will be omitted.", "Not supported", MessageBoxButton.OK, MessageBoxImage.Information);
+
                 return;
             }
 
@@ -101,7 +104,7 @@ namespace File_browser.ViewModel
             //Check if found a key in files. If not returns the function
             if (!ChoosenFiles.Any(t => t.MatchingWords > 0))
             {
-                MessageBox.Show("None of your key words were found in the specified files. ", "NOT FOUND", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("None of your key words were found in the specified files. ", "Warning", MessageBoxButton.OK, MessageBoxImage.Exclamation);
                 return;
             }
         }
@@ -130,7 +133,7 @@ namespace File_browser.ViewModel
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
         }
@@ -143,24 +146,28 @@ namespace File_browser.ViewModel
         private List<List<string>> ParseTextToWords(List<string> text)
         {
             List<List<string>> textFromFileAsWords = new List<List<string>>();
+
             foreach (var t in text)
             {
                 textFromFileAsWords.Add(TextParser.ParseTextToWords(t));
             }
+
             return textFromFileAsWords;
         }
 
         private void CheckOrSearchMode(List<List<string>> textFromFileAsWords, List<string> keyWordsList)
         {
             bool hasKeyWord;
+
             for (int i = 0; i < textFromFileAsWords.Count; i++)
             {
                 for (int j = 0; j < keyWordsList.Count; j++)
                 {
                     hasKeyWord = textFromFileAsWords[i].Any(t => t.Contains(keyWordsList[j]));
+
                     if (hasKeyWord)
                     {
-                        ++ChoosenFiles[i].MatchingWords;
+                        ChoosenFiles[i].MatchingWords++;
                         hasKeyWord = false;
                         break;
                     }
@@ -180,13 +187,15 @@ namespace File_browser.ViewModel
                 for (int j = 0; j < keyWordsList.Count; j++)
                 {
                     hasKeyWord[j] = textFromFileAsWords[i].Any(t => t.Contains(keyWordsList[j]));
+
                     if (hasKeyWord[j])
                     {
-                        ++ChoosenFiles[i].MatchingWords;
+                        ChoosenFiles[i].MatchingWords++;
                     }
                 }
-                if (hasKeyWord.All(t => t == true))
+                if (hasKeyWord.All(t => t == true)) // questionable
                     filesContainingKeyWords.Add(ChoosenFiles[i]);
+                
                 Array.Fill(hasKeyWord, false);
             }
 

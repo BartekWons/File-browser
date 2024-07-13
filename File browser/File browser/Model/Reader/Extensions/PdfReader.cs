@@ -8,11 +8,6 @@ namespace File_browser.Model.Reader.Extensions
 {
     public class PdfReader : FileReader
     {
-        public PdfReader()
-        {
-            MatchingWords = 0;
-        }
-
         public override void Open()
         {
             Process.Start(new ProcessStartInfo(Path) { UseShellExecute = true });
@@ -36,11 +31,10 @@ namespace File_browser.Model.Reader.Extensions
                 Debug.WriteLine(ex);
                 return "";
             }
+
             if (sb.Length == 0 || sb == null) return "";
 
-            string result = sb.ToString();
-            result = Regex.Replace(result, @"\n|\r|\t", " ");
-            return result;
+            return Regex.Replace(sb.ToString(), @"\n|\r|\t", " ");
         }
     }
 }
