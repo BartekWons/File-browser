@@ -19,10 +19,11 @@ namespace File_browser.ViewModel
             _canExecute = canExectue;
         }
 
-        public bool CanExecute(object? parameter)
-        {
-            return _canExecute == null || CanExecute(parameter);
-        }
+        // Questionable implementation: certain arguments make the stack overflow
+        // public bool CanExecute(object? parameter)
+        // {
+        //     return _canExecute == null || CanExecute(parameter);
+        // }
 
         public void Execute(object? parameter)
         {

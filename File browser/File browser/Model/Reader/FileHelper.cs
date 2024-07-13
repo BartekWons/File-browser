@@ -13,7 +13,7 @@ namespace File_browser.Model.Reader
 
             if (!Directory.Exists(directoryPath))
             {
-                throw new DirectoryNotFoundException("Choosen path is not a directory");
+                throw new DirectoryNotFoundException($"Path \"{directoryPath}\" is not a directory");
             }
 
             string[] filesArr = Directory.GetFiles(directoryPath, "*.*", SearchOption.AllDirectories);

@@ -8,9 +8,7 @@ namespace File_browser.Model.Utils
         {
             if (collection == null) throw new ArgumentNullException(nameof(collection));
 
-            if (items == null) throw new ArgumentNullException(nameof (items));
-
-
+            if (items == null) throw new ArgumentNullException(nameof(items));
 
             foreach (var item in items)
             {

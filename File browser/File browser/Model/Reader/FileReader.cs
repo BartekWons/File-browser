@@ -4,7 +4,7 @@
     {
         public string FileName { get; set; }
         public string Path { get; set; }
-        public int MatchingWords { get; set; }
+        public int MatchingWords { get; set; } = 0;
 
         public abstract string ReadData();
 
